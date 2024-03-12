@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>ePhone</title>
+	<title>Epple</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,300&display=swap" rel="stylesheet">
@@ -20,9 +19,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			padding-left: 96px;
-			padding-right: 96px;
-			padding-top: 24px;
+			padding: 24px 128px 24px;
 		}
 		.logo {
 			color: #F9FAF8;
@@ -36,16 +33,17 @@
 			gap: 48px;
 			font-family: "Roboto", sans-serif;
 			font-size: 18px;
-		}
-		.page1 {
-			display: flex;
 			align-items: center;
 			justify-content: space-between;
 		}
+		.page {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			gap: 136px;
+			padding: 64px;
+		}
 		.hero {
-			padding-left: 96px;
-			padding-top: 96px;
-			padding-bottom: auto;
 			gap: 16px;
 			display: flex;
 			align-items: flex-start;
@@ -62,43 +60,187 @@
 			color: #E5E7EB;
 			font-family: "Roboto", sans-serif;
 			font-size: 18px;
+			max-width: 480px;
 		}
 		.button {
 			color: #F9FAF8;
 			background-color: #3882F6;
-			padding: 12px;
-			padding-left: 24px;
-			padding-right: 24px;
+			padding: 8px 24px 8px;
 			border-radius: 12px;
 			font-family: "Roboto", sans-serif;
 			font-size: 18px;
 			font-weight: 900;
 		}
 		.phone {
-			margin: 24px;
-			margin-right: 96px;
+			width: 480px;
+    		height: 240px;
+		}
+		.information {
+			display: flex;
+			flex-flow: column;
+			align-items: center;
+			padding: 48px;
+		}
+		.content {	
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			padding: 48px;
+			gap: 64px;
+		}
+		.image {
+			display: flex;
+			height: 128px;
+			width:	128px;
+			border: 4px solid;
+			border-color: #3882F6;
+			border-radius: 12px;
+			overflow: hidden;
+		}
+		.title {
+			font-family: "Roboto", sans-serif;
+			font-size: 36px;
+			font-weight: 900;
+			color: #1F2937;
+		}
+		.infocontent {
+			text-align: center;
+			font-family: "Roboto", sans-serif;
+			font-size: 18px;
+			color: #1F2937;
+		}
+		.illustration {
+			max-width: inherit;
+  			max-height: inherit;
+  			height: inherit;
+  			width: inherit;
+  			object-fit: cover;
+		}
+		.quote {
+			background-color: #E5E7EB;
+			display: flex;
+			flex-flow: column;
+			padding: 36px 256px 36px;
+		}
+		.testimonial-quote {
+			color: #1F2937;
+			font-family: "Roboto", sans-serif;
+			font-size: 36px;
+			font-weight: 300;
+			font-style: italic;
+		}
+		.testimonial-name {
+			color: #1F2937;
+			font-family: "Roboto", sans-serif;
+			font-size: 24px;
+			font-weight: 700;
+			text-align: right;
+			padding-right: 42px;
+			margin-top: -24px;
+		}
+		.block {
+			background-color: #3882F6;
+			display: flex;
+			flex-flow: row;
+			margin: 72px 180px 72px;
+			padding: 42px 96px 42px;
+			align-items: center;
+			justify-content: space-between;
+			border-radius: 12px;
+		}
+		.advert {
+			display: flex;
+			flex-flow: column;
+			gap: 8px;
+			color: #F9FAF8;
+			font-family: "Roboto", sans-serif;
+			font-size: 18px;
+			font-weight: 500;
+		}
+		.button-2 {
+			color: #F9FAF8;
+			background-color: #3882F6;
+			padding: 8px 24px 8px;
+			font-family: "Roboto", sans-serif;
+			font-size: 18px;
+			font-weight: 900;
+			border: 2px solid;
+			border-color: #F9FAF8;
+			border-radius: 12px;
+		}
+		footer {
+			background-color: #1F2937;
+			height: 96px;
+			text-align: center;
+			display: flex;
+  			justify-content: center;
+  			align-items: center;
+  			text-align: center;
+  			color: #F9FAF8;
+  			font-family: "Roboto", sans-serif;
+			font-size: 18px;
 		}
 	</style>
 </head>
 <body>
 <div class="header">
 	<div class="navbar">
-		<div class="logo">ePhone</div>	
+		<div class="logo">Epple</div>	
 		<div class="navigation">
-		<div><a href="">About</a></div>
-		<div><a href="">FAQ</a></div>
-		<div><a href="">GitHub</a></div>
+		<div><a href="#info" style="padding:24px 0px 50%;">Features</a></div>
+		<div><a href="#testi" style="padding:50% 0px 50%;">Testimonials</a></div>
+		<div class="button"><a href="#buynow">Buy now</a></div>
 		</div>
 	</div>
-	<div class="page1">
+	<div class="page">
 		<div class="hero">
 			<div class="main_text">ePhone 17 arrived!</div>
-			<div class="description">The new ePhone 17 just released with the fastest chipset on the market!</div>
-			<div class="button"><a href="">Buy Now<a></div>
+			<div class="description">The new ePhone 17 just released with the fastest chipset & the best camera on the market!</div>
+			<div id="info" class="button"><a href="#buynow">Buy now<a></div>
 		</div>
-		<div class="phone"><img src="images/phone.webp"></div>
+		<div><img class="phone" src="images/phone.png"></div>
 	</div>
-	
+</div>
+<div class="information">
+	<div class="title">Features</div>
+	<div class="content">
+		<div class="group">
+			<div class="image"><img class="illustration" src="images/chip.webp"></div>
+			<p class="infocontent">Fastest Chipset</p>
+		</div>
+		<div class="group">
+			<div class="image"><img class="illustration"src="images/camera.webp"></div>
+			<p class="infocontent">Best Camera</p>
+		</div>
+		<div class="group">
+			<div class="image"><img class="illustration" src="images/battery.webp"></div>
+			<p class="infocontent">9000 mAH Battery</p>
+		</div>
+		<div class="group">
+			<div class="image"><img class="illustration" src="images/ai.webp"></div>
+			<p id="testi" class="infocontent">AI Integration</p>
+		</div>
+	</div>
+</div>
+<div class="quote">
+	<div class="testimonial">
+		<p class="testimonial-quote">"This is the best phone i ever seen. It boasts the fastest chip ever seen in a phone, the camera quality also sets new standard for a phone. With the AI & battery, it take users experience to the new heights.</p>
+	</div>
+	<div class="testimonial">
+		<p id="buynow" class="testimonial-name">-Steve Jobs</p>
+	</div>
+</div>
+<div>
+	<div class="block">
+		<div class="advert">
+			<div class="ad1"><strong>Perfect Timing! 15% Discount until 22nd of May!</strong></div>
+			<div class="ad2">Buy our product now by clicking that button right over there!</div>
+		</div>
+		<div class="button-2"><a href="">Buy now</a></div>
+	</div>
 </div>
 </body>
+<footer>
+	<p class="footer">Copyright © Epple Inc. All rights reserved.</p>
+</footer>
 </html>
